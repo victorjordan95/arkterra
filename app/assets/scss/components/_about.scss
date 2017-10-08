@@ -1,0 +1,27 @@
+.about {
+    margin-bottom: 36px;
+    text-align: center;
+    .subtitle {
+        color : darken($branco, 30%);
+        font-style: italic;
+    }
+
+    .title {
+        color : #000;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .text-separator {
+        border: 0;
+        border-top: 4px solid $azul-escuro;
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+    }
+
+    .description{
+        color : darken($branco, 30%);
+    }
+
+}
