@@ -29,6 +29,7 @@ $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function (event) {
+        $("#bs-example-navbar-collapse-1").removeClass('in');
         // On-page links
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
