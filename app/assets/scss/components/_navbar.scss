@@ -10,6 +10,15 @@
     .navbar-header {
         height: 70px;
     }
+
+    .nav {
+        li {
+            height: 70px;
+            a {
+                top : 10px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
