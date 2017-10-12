@@ -6,12 +6,17 @@
 
 @import "base/base";
 
+@import "objects/btn";
+@import "objects/service-card";
+@import "objects/info";
+
 @import "components/navbar";
 @import "components/header";
 @import "components/footer";
-@import "components/about";
+@import "components/more-information";
+@import "components/carousel";
+@import "components/feedback";
+@import "components/contact";
 
-@import "objects/btn";
-@import "objects/service-card";
 
 @import "trumps/trumps";

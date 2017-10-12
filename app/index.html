@@ -8,6 +8,8 @@
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,12 +21,30 @@
 </head>
 
 <body>
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden; display:none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+	    xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-arrow-left" viewBox="0 0 32 32">
+				<title>arrow Left</title>
+				<path d="M10.445 11.214l11.111-11.111 4.834 4.833-11.112 11.112 11.111 11.111-4.834 4.834-15.947-15.945z"></path>
+			</symbol>
+			<symbol id="icon-arrow-right" viewBox="0 0 32 32">
+				<title>arrow right</title>
+				<path d="M21.55 11.218l-11.101-11.103-4.831 4.829 11.103 11.103-11.101 11.102 4.829 4.83 15.934-15.933z"></path>
+			</symbol>
+			<symbol id="icon-quote" viewBox="0 0 32 32">
+				<title>Quote mark</title>
+				<path d="M30.336 18.336c-0.416-2.784-2.784-4.768-5.472-4.896 0.672-2.496 2.304-3.488 4.288-4.064 0.192-0.064 0.16-0.256 0.16-0.256l-0.32-1.984c0 0-0.032-0.16-0.288-0.128-6.848 0.768-11.488 5.984-10.624 12.32 0.8 4.384 4.224 6.080 7.392 5.632 3.168-0.512 5.344-3.456 4.864-6.624v0zM8.48 13.44c0.64-2.496 2.336-3.488 4.288-4.064 0.192-0.064 0.16-0.256 0.16-0.256l-0.288-1.984c0 0-0.032-0.16-0.288-0.128-6.848 0.736-11.456 5.952-10.656 12.288 0.832 4.416 4.288 6.112 7.424 5.664 3.168-0.512 5.344-3.456 4.832-6.624-0.416-2.816-2.752-4.8-5.472-4.896z"></path>
+			</symbol>
+		</defs>
+	</svg>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				 aria-expanded="false">
+				    aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -37,7 +57,9 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Clientes</a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,12 +80,12 @@
 
 	<main>
 
-		<section class="container about">
+		<section class="container info">
 			<div class="row">
 
 				<div class="col-xs-12">
 					<p class="subtitle">Planejar o presente, construir o futuro!</p>
-					<p class="title">Há mais 35 anos acompanhando o desenvolvimento do Vale do Paraíba e região.</p>
+					<p class="title">Acompanhando o desenvolvimento do Vale do Paraíba e região.</p>
 					<hr class="text-separator">
 					<p class="description">
 						A empresa tem como um de seus pilares estar sempre na vanguarda da construção civil, sempre em busca do binômio alta qualidade/custo
@@ -75,14 +97,39 @@
 
 		<section class="services container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-sm-6 col-md-4">
 					<div class="service-card construction">
 						<div class="itens">
 							<p class="title">Construções gerais</p>
 							<hr class="separator">
 							<p class="description">
-								Breve texto descrevendo esse serviço disponibilizado pela empresa
-								para poder atrair mais cliente.
+								Breve texto descrevendo esse serviço disponibilizado pela empresa para poder atrair mais cliente.
+							</p>
+							<a href="" class="btn">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="service-card construction">
+						<div class="itens">
+							<p class="title">Terraplanagem</p>
+							<hr class="separator">
+							<p class="description">
+								Breve texto descrevendo esse serviço disponibilizado pela empresa para poder atrair mais cliente.
+							</p>
+							<a href="" class="btn">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="service-card construction">
+						<div class="itens">
+							<p class="title">Terraplanagem</p>
+							<hr class="separator">
+							<p class="description">
+								Breve texto descrevendo esse serviço disponibilizado pela empresa para poder atrair mais cliente.
 							</p>
 							<a href="" class="btn">Saiba mais</a>
 						</div>
@@ -91,13 +138,102 @@
 			</div>
 		</section>
 
+		<section class="more-information fluid-container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<p class="title">Vanguarda</p>
+					<p class="subtitle">na construção civil</p>
+					<p class="description">
+						A empresa tem como um de seus pilares estar sempre na vanguarda da construção civil, sempre em busca do binômio alta qualidade/custo
+						baixo, já iniciando cada projeto com a visão no futuro.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<p class="number">35 <span class="years">anos</span></p>
+					<p class="legend">de experiencia no mercado de construção civil.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container info">
+			<div class="row">
+
+				<div class="col-xs-12">
+					<p class="subtitle">Clientes</p>
+					<p class="title">Alguns de nossos principais clientes</p>
+					<hr class="text-separator">
+
+					<div id="owl-clients" class="owl-carousel clients-carousel">
+						<div class="container client-img"> <img src="assets/img/clients/cliente-abb.png" alt="Logo cliente Abimaq"> </div>
+						<div class="container client-img"> <img src="assets/img/clients/cliente-akaer-solutions.png" alt="Logo cliente Alstom"> </div>
+						<div class="container client-img"> <img src="assets/img/clients/cliente-atech.png" alt="Logo cliente Cebrace"> </div>
+						<div class="container client-img"> <img src="assets/img/clients/cliente-altran.png" alt="Logo cliente Chiavini e Santos"> </div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="feedback container-fluid">
+
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="title">Depoimentos</p>
+					<svg class='icone icon-quote'>
+						<use xlink:href='#icon-quote'></use>
+					</svg>
+
+					<p class="description">
+						"Algum comentário de algum cliente sobre a Arkterra.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in accumsan arcu. 
+						Vestibulum eleifend quam id justo vehicula,eget fringilla tellus auctor.
+						Morbi ex sem, condimentum et tincidunt id, viverra vel dui."
+					</p>
+					<p class="author">Cliente, Local</p>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="container info">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="subtitle">Contato</p>
+					<p class="title">Entre em contato conosco!</p>
+					<hr class="text-separator">
+				</div>
+			</div>
+			<div class="row contact">
+				<div class="col-xs-12 col-sm-6">
+					<p class="name">Aluiz R. Quaresma Jr.</p>
+					<p class="role">Engenheiro Civil</p>
+					<p class="phone">(12) 99115-9659</p>
+
+					<p class="name">Rita de Cassia</p>
+					<p class="role">Gerente</p>
+					<p class="phone">(12) 99167-5696</p>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<p class="arkterra">Arkterra Construtora & Terraplanagem</p>
+					<p class="arkphone"><strong>Telefone</strong> : (12) 3941-8685</p>
+					<p class="arkmail"><strong>E-mail</strong> ark_terra@yahoo.com.br</p>
+				</div>
+			</div>
+		</section>
+
 	</main>
+
+	<footer class="footer">
+		<p class="name">Arkterra Construtora & Terraplanagem</p>
+	</footer>
 
 
 
 	<!-- JSfiles -->
 	<script src="js/jquery.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/js.js"></script>
 </body>
 

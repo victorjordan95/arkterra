@@ -1,5 +1,10 @@
 .footer {
-    color: #FFF;
-    height: 44px;
+    color: #fff;
     text-align: center;
+    background-color: #212121;
+
+    .name {
+        margin: 0;
+        padding: 20px;
+    }
 }

@@ -1,10 +1,11 @@
 .service-card {
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #ebebeb;
     color: #fff;
     cursor: pointer;
-    margin: auto;
+    margin: 9px auto;
     padding: 30px 16px;
     .itens {
         padding: 5px;
@@ -41,7 +42,7 @@
             >.btn {
                 margin: 18px 0 0 0;
                 transition: all .5s ease;
-                width: 25%;
+                width: 50%;
             }
         }
     }
@@ -53,7 +54,6 @@
             >.btn {
                 margin: 18px 0 0 0;
                 transition: all .5s ease;
-                width: 30%;
             }
         }
     }

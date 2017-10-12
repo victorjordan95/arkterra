@@ -39,7 +39,7 @@ var paths = {
         output:     'build/js/',
     },
 	font: {
-		input:      'app/assets/fonts/*.*',
+	input:      'app/assets/fonts/*.*',
         output:     'build/assets/fonts/',
 	},
     jsLibs: {
@@ -47,7 +47,7 @@ var paths = {
         output:  'build/lib'
     },
     imagemin: {
-        input:      'app/assets/img/*',
+        input:      'app/assets/img/**/*',
         output:     'build/assets/img/'
     },
     livereload: {
