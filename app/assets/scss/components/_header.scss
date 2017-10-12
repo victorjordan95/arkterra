@@ -30,6 +30,10 @@ header {
             background-color: $azul-escuro;
             color: $branco;
             z-index: 2;
+
+            &:hover {
+                background-color : darken($azul-escuro , 5%);
+            }
         }
     }
     &::after {
