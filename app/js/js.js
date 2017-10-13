@@ -23,11 +23,35 @@ $("#owl-clients").owlCarousel({
     }
 });
 
+jQuery(document).ready(function ($) {
+	$('#myCarousel2').carousel({
+		interval: 5000
+	});
+	//Handles the carousel thumbnails
+	$('[id^=carousel-selector-]').click(function () {
+		var id_selector = $(this).attr("id");
+		try {
+			var id = /-(\d+)$/.exec(id_selector)[1];
+			console.log(id_selector, id);
+			jQuery('#myCarousel2').carousel(parseInt(id));
+		}
+		catch (e) {
+			console.log('Regex failed!', e);
+		}
+	});
+	// When the carousel slides, auto update the text
+	$('#myCarousel2').on('slid.bs.carousel', function (e) {
+		var id = $('.item.active').data('slide-number');
+		$('#carousel-text').html($('#slide-content-' + id).html());
+	});
+});
+
 // Select all links with hashes
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('.carousel-control')
     .click(function (event) {
         $("#bs-example-navbar-collapse-1").removeClass('in');
         // On-page links
