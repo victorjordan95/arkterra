@@ -6,6 +6,7 @@
     color: #fff;
     cursor: pointer;
     margin: 9px auto;
+    min-height: 300px;
     padding: 30px 16px;
     .itens {
         padding: 5px;
@@ -39,12 +40,15 @@
     .construction,
     .terraplanagem,
     .contencao,
-    .saneamento {
+    .saneamento,
+    .consultoria,
+    .laudo,
+    .regularizacao {
         &::after {
-            background: url(../img/pattern2.png) repeat;
+            background: url('../img/pattern2.png') repeat;
             content: "";
             display: block;
-            height: 92%;
+            height: 93%;
             left: 16px;
             position: absolute;
             top: 10px;
@@ -77,12 +81,15 @@
     .construction,
     .terraplanagem,
     .contencao,
-    .saneamento {
+    .saneamento,
+    .consultoria,
+    .laudo,
+    .regularizacao {
         &::after {
             background: url(../img/pattern2.png) repeat;
             content: "";
             display: block;
-            height: 92%;
+            height: 93%;
             left: 16px;
             position: absolute;
             top: 10px;
@@ -105,4 +112,16 @@
 
 .contencao {
     background-image: url('../img/servico-muro-contencao.jpg');
+}
+
+.consultoria{
+    background-image: url('../img/servico-consultoria.jpg');
+}
+
+.laudo {
+    background-image: url('../img/servico-laudo.jpg');
+}
+
+.regularizacao{
+    background-image: url('../img/servico-regularizacao.jpg');
 }
