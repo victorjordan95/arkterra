@@ -37,23 +37,24 @@
             }
         }
     }
-    .construction,
-    .terraplanagem,
-    .contencao,
-    .saneamento,
-    .consultoria,
-    .laudo,
-    .regularizacao {
-        &::after {
-            background: url('../img/pattern2.png') repeat;
-            content: "";
-            display: block;
-            height: 93%;
-            left: 16px;
-            position: absolute;
-            top: 10px;
-            width: 92%;
-        }
+}
+
+.construction,
+.terraplanagem,
+.contencao,
+.saneamento,
+.consultoria,
+.laudo,
+.regularizacao {
+    &::after {
+        background: url('../img/pattern2.png') repeat;
+        content: "";
+        display: block;
+        height: 93%;
+        left: 16px;
+        position: absolute;
+        top: 10px;
+        width: 90%;
     }
 }
 
@@ -114,7 +115,7 @@
     background-image: url('../img/servico-muro-contencao.jpg');
 }
 
-.consultoria{
+.consultoria {
     background-image: url('../img/servico-consultoria.jpg');
 }
 
@@ -122,6 +123,6 @@
     background-image: url('../img/servico-laudo.jpg');
 }
 
-.regularizacao{
+.regularizacao {
     background-image: url('../img/servico-regularizacao.jpg');
 }
