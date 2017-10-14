@@ -2,6 +2,11 @@
     padding: 18px 0;
     text-align: center;
     
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .subtitle {
         color : darken($branco, 30%);
         font-style: italic;

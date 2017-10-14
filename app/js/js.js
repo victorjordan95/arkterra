@@ -23,6 +23,31 @@ $("#owl-clients").owlCarousel({
     }
 });
 
+$("#owl-clients2").owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    loop: true,
+    navText: ["<svg class='icone icon-arrow-left'><use xlink:href='#icon-arrow-left'></use></svg>", "<svg class='icone icon-arrow-right'><use xlink:href='#icon-arrow-right'></use></svg>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        568: {
+            items: 2
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
 jQuery(document).ready(function ($) {
 	$('#myCarousel2').carousel({
 		interval: 5000
@@ -67,7 +92,7 @@ $('a[href*="#"]')
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 50
                 }, 1000, function () {
                     // Callback after animation
                     // Must change focus!
