@@ -7,7 +7,7 @@ header {
     background-size: cover;
     border-bottom: 5px solid $azul-claro;
     font-family: $font;
-    height: 100vh;
+    height: 80vh;
     margin-bottom: 36px; 
     .banner-header {
         color: #fff;
@@ -41,7 +41,7 @@ header {
         background: url('../img/pattern2.png') repeat;
         content: "";
         display: block;
-        height: 100vh;
+        height: 80vh;
         left: 0;
         top: 20px;
         position: absolute;

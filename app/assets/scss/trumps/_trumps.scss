@@ -5,3 +5,15 @@
 .is-hidden { 
     display: none !important;
 }
+
+.mb-24 {
+    margin-bottom: 24px!important;
+}
+
+.deco-none {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
